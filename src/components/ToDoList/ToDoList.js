@@ -1,15 +1,18 @@
 import React from "react"
-
-import ToDoItem from "./TodoItem"
 import "./ToDoList.scss"
+import ToDoItem from "./TodoItem"
+import todoData from "../../todoData"
 
-function ToDoList() {
-    return (
+const ToDoList = () => {
+    const todoItemComponent = todoData.map(item => 
+    <ToDoItem
+        key={item.key}
+        listItem={item}
+    />)
+    
+    return(
         <div className="todolist">
-            <ToDoItem />
-            <ToDoItem />
-            <ToDoItem />
-            <ToDoItem />
+            {todoItemComponent}
         </div>
     )
 }
