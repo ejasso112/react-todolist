@@ -1,11 +1,16 @@
-import React from "react"
-
+//Dependencies
+import React, { Component } from "react"
+//ToDoListComponent
 import ToDoList from "./components/ToDoList/ToDoList"
+//App Component Style
 import "./App.scss"
-function App() {
-    return (
-        <ToDoList />
-    )
+
+class App extends Component {
+    render() {
+        return (    
+            <ToDoList />
+        )
+    }
 }
 
 export default App
