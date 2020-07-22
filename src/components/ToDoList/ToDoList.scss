@@ -49,5 +49,11 @@
     &__text {
         margin: 0;
         padding-left: 12px;
+
+        &--completed {
+            text-decoration: line-through;
+            color: rgba($color: #000000, $alpha: 0.6);
+            font-style: italic;
+        }
     }
 }
